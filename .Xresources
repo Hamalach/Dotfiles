@@ -1,0 +1,81 @@
+urxvt.font:                xft:inconsolata for powerline:size=12
+urxvt.boldFont:            xft:inconsolata for powerline:size=12:bold
+urxvt.italicFont:          xft:inconsolata for powerline:size=12:italic
+urxvt.boldItalicFont:      xft:inconsolata for powerline:size=12:bold:italic
+!urxvt.letterSpace:         -1
+
+#define base00 #263238 
+#define base01 #2E3D45 
+#define base02 #455B66
+#define base03 #567280
+#define base04 #799FB3
+#define base05 #93C2D9
+#define base06 #ADE4FF 
+#define base07 #FFFFFF 
+#define base08 #FF4081 // red
+#define base09 #FF7043 // orange
+#define base0A #FFA21A // yellow
+#define base0B #8BC34A // green
+#define base0C #00BCD4 // cyan
+#define base0D #2979FF // blue
+#define base0E #9C27B0 // purple
+#define base0F #7986CB // indigo
+
+*foreground:   base05
+*background:   [95]base00
+*cursorColor:  #FFCC00
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+urxvt.depth: 32
+urxvt.scrollBar: false
+urxvt.perl-ext-common: default,matcher,resize-font,keyboard-select,clipboard
+urxvt.url-launcher: /usr/bin/xdg-open
+urxvt.matcher.button: 1
+urxvt.matcher.rend.0: Uline
+
+urxvt.resize-font.smaller: C-minus
+urxvt.resize-font.bigger: C-plus
+urxvt.resize-font.reset: C-equal
+urxvt.resize-font.show: C-question
+
+urxvt.iso14755: false
+urxvt.iso14755_52: false
+
+urxvt.keysym.M-Escape: perl:keyboard-select:activate
+urxvt.keysym.C-Escape: command: \033[6 q
+
+rofi.width: 30
+rofi.opacity: 90
+rofi.lines: 5
+rofi.terminal: urxvt
+rofi.font: Corbert Bold 16
+rofi.color-enabled: true
+rofi.modi: run,window
+rofi.padding: 16
+rofi.bw: 5
+rofi.monitor: -1
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+
+! State:          'bg'    'fg'    'bgalt' 'hlbg'  'hlfg'
+rofi.color-normal: base00, base0C, base00, base0C, base00
+rofi.color-urgent: base00, base08, base00, base08, base00
+rofi.color-active: base00, base0B, base00, base0B, base00 
+!                 'bg'    'border'
+rofi.color-window: base00, base0C
